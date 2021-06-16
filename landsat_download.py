@@ -51,6 +51,6 @@ api.logout()
 ee = EarthExplorer(username, password)
 for scene in scenes:
     print("Downloading a scene from " + scene['acquisition_date'].strftime('%Y-%m-%d') + " with ID " + scene['entity_id'])
-    ee.download(scene['entity_id'], output_dir='./data')
+    ee.download(scene['entity_id'], output_dir='./data', dataset=dataset)
 
 ee.logout()
