@@ -19,3 +19,13 @@ For the dataset options, see [https://github.com/yannforget/landsatxplore](https
 Currently, this will download all scenes as .tar.gz archives to the ./data/ subdirectory of this repository. 
 
 Most of the code used here is from the examples provided by the base library above. 
+
+# NOTE - October 20, 2021
+
+As of right now, the LandsatXplore package isn't properly updated to reference the new dataset ID for Landsat 8 Collection 2 Level 2 (and maybe other datasets, too). The ID number is hard-coded in the package so a workaround is to follow the directions from fkroeber at this issue: https://github.com/yannforget/landsatxplore/issues/45
+
+I installed the package in miniconda within an environment called landsat_download, so for me the relevant python source code is at: 
+
+~/miniconda3/envs/landsat_download/lib/python3.9/site-packages/landsatxplore/earthexplorer.py
+
+Your results may vary a bit. 
